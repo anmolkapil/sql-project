@@ -10,7 +10,7 @@ function QueryPanel({ tabId }) {
   const { savedQueries, selectedQuery, activeTab } = useContext(AppContext);
   //Setting Demo code Snippet for Even and Odd Tabs
   const codeSnippet =
-    tabId % 2 ? 'SELECT * FROM customers' : 'SELECT * FROM order_details';
+    tabId % 2 ? 'SELECT * FROM customers;' : 'SELECT * FROM order_details;';
   const [queryName, setQueryName] = useState('');
   const [query, setQuery] = useState(codeSnippet);
   const [loading, setLoading] = useState(false);
