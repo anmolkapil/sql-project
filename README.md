@@ -11,7 +11,6 @@ This project is a web application for executing and managing SQL queries. It pro
   - `react-simple-code-editor`: A lightweight and customizable code editor for displaying and editing SQL queries.
   - `prismjs`: A syntax highlighter to colorize SQL code for better readability.
   - `papaparse`: A library for parsing CSV data efficiently.
-  - Other standard React packages used for state management and context handling.
 
 ## Page Load Time Measurement
 
