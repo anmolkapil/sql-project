@@ -7,7 +7,7 @@ import QueryResults from './QueryResults';
 import { AppContext } from '../context/AppContext';
 
 function QueryPanel({ tabId }) {
-  const { savedQueries, selectedQuery, activeTab } = useContext(AppContext);
+  const { savedQueries, selectedQuery, setSelectedQuery, activeTab } = useContext(AppContext);
   //Setting Demo code Snippet for Even and Odd Tabs
   const codeSnippet =
     tabId % 2 ? 'SELECT * FROM customers;' : 'SELECT * FROM order_details;';
