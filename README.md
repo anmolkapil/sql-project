@@ -21,8 +21,4 @@ The page load time was measured using gtmetrix
 
 ## Optimizations for Load Time and Performance
 
-1. **Code Splitting:** Used code splitting to split the React components into smaller chunks. This ensures that only the necessary components are loaded initially, reducing the initial load time.
-
-2. **Local Storage for Saved Queries:** Instead of fetching saved queries from a server on every page load, used the browser's local storage to store and retrieve saved queries. This eliminates the need for repetitive server requests and speeds up the application's responsiveness.
-
-3. **Pagination for Query Results:** To avoid rendering a large number of table rows at once, implemented pagination for query results. This ensures that only a limited number of rows are displayed at a time, improving page load and rendering performance.
+**Pagination for Query Results:** To avoid rendering a large number of table rows at once, implemented pagination for query results. This ensures that only a limited number of rows are displayed at a time, improving page load and rendering performance.
