@@ -21,11 +21,12 @@ function QueryPanel({ tabId }) {
   const isActiveTab = activeTab === tabId;
 
   useEffect(() => {
-    if (selectedQuery && savedQueries[selectedQuery] && isActiveTab) {
+    if (isActiveTab && selectedQuery) {
       setQueryName(selectedQuery);
       setQuery(savedQueries[selectedQuery]);
+      setSelectedQuery(null);
     }
-  }, [selectedQuery, savedQueries, isActiveTab]);
+  }, [isActiveTab, selectedQuery, savedQueries, setSelectedQuery]);
 
   const handleRunQuery = async () => {
     setLoading(true);
